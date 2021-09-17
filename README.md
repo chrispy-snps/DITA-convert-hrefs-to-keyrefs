@@ -52,7 +52,7 @@ The script works as follows:
 
 `@href`/`@keyref` replacements are performed using regular-expression substitution so that the files are minimally modified. All existing formatting/indenting remains in place.
 
-`@href` cross-references to nested subtopics are straightforward, as the file/subtopic ID path in the cross-reference `@href` matches the file/subtopic ID used in the map:
+`@href` cross-references to nested subtopics are straightforward, as the file/subtopic ID path in the cross-reference `@href` matches the file/subtopic ID used in the map `@href`:
 
 ```
 <topicref href="topic.dita" keys="topic">
@@ -70,7 +70,7 @@ The script works as follows:
 
 ```
 <xref href="topic.dita#subtopic_id/table_id"/>
-<!--        ^^^^^^^^^^^^^^^^^^^^^^ topic/subtopic ID reference -->
+<!--        ^^^^^^^^^^^^^^^^^^^^^^          topic/subtopic ID reference -->
 <!--                              ^^^^^^^^^ nontopic element ID reference -->
 ```
 
