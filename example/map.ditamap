@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:map.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<map>
+    <title>My Book</title>
+    <topicref href="chapter1/topic1.dita" keys="topic1">
+      <topicref href="chapter1/topic1.dita#subtopic1" keys="topic1_subtopic1"/>
+      <topicref href="chapter1/topic1.dita#subtopic2" keys="topic1_subtopic2"/>
+    </topicref>
+    <topicref href="chapter2/topic2.dita" keys="topic2">
+      <topicref href="chapter2/topic2.dita#subtopic1" keys="topic2_subtopic1"/>
+      <topicref href="chapter2/topic2.dita#subtopic2" keys="topic2_subtopic2"/>
+    </topicref>
+</map>

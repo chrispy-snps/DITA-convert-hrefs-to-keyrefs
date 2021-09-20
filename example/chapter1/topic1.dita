@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="urn:oasis:names:tc:dita:rng:topic.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<topic id="topic">
+    <title>My Topic</title>
+    <body>
+        <p>Here's a link to the first topic instance: <xref href="topic1.dita"/></p>
+        <p>Here's a link to the second topic instance: <xref href="../dir2/topic2.dita"/></p>
+    </body>
+    <topic id="subtopic1">
+        <title>My Subtopic 1</title>
+        <body>
+            <p>Here's a link to subtopic 1 in the first topic instance: <xref href="topic1.dita#subtopic1"/></p>
+            <p>Here's a link to subtopic 1 in the second topic instance: <xref href="../dir2/topic2.dita#subtopic1"/></p>
+        </body>
+    </topic>
+    <topic id="subtopic2">
+        <title>My Subtopic 2</title>
+        <body>
+            <p>Here's a link to subtopic 2 in the first topic instance: <xref href="topic1.dita#subtopic2"/></p>
+            <p>Here's a link to subtopic 2 in the second topic instance: <xref href="../dir2/topic2.dita#subtopic2"/></p>
+        </body>
+    </topic>
+</topic>
