@@ -136,6 +136,7 @@ The utility reads each topic file twice - once to obtain the root topic's `@id` 
 
 Note the following limitations of this script:
 
+* This script requires that you already have `@keys` values defined in your map.
 * Keyscopes inside maps (`scopename.keyname`) are not considered; only the leaf key value associated with a topic is considered.
 * If a topic file is referenced multiple times within a map, the last-defined key for that file is used.
 * The script processes each input map in turn. If multiple maps reference the same topic files, only the first referencing map notes the topics as updated (as they are already updated when subsequent maps are processed).
