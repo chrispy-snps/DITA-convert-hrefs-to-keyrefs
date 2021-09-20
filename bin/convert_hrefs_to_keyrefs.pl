@@ -17,7 +17,7 @@ GetOptions(
   ) or HelpMessage(1);
 
 # get input maps to process (default is dita/*.ditamap)
-my @input_map_files = distinct(map {File::Spec->rel2abs($_)} @ARGV);
+my @input_map_files = distinct(map {File::Spec->rel2abs($_)} map {glob $_} @ARGV);
 
 # read map files and gather metrics
 foreach my $map_file (@input_map_files) {
