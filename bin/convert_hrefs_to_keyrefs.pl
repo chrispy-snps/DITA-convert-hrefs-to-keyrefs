@@ -53,7 +53,7 @@ foreach my $map_file (@input_map_files) {
     # ^^^^^^^^^^^^^^^^^^^^^^         - $topic
     #                       ^^^^^^^^ - $nontopic
     $topic = File::Spec->rel2abs($topic, dirname($dita_file));
-    while ($topic =~ s![^/]+/\.\./!!) {}  # collapse dir1/../dir2 backtracking
+    while ($topic =~ s![^/]+/\.\./!!) {}  # collapse dir1/../dir2 backtracking in linux (File::Spec->rel2abs does this in Windows)
     if (exists($keyref_for_href{$topic})) {
      $file_changed++;
      return sprintf('keyref="%s%s"', $keyref_for_href{$topic}, ($nontopic or ''));
